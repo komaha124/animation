@@ -1,0 +1,91 @@
+.card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    perspective: 30rem;
+  }
+  .front, .back {
+    position: absolute;
+    width: 100%; height: 100%;
+    transition: transform 1s;
+    backface-visibility:hidden;
+  }
+  .front { 
+    background-color: transparent; 
+  }
+  .back { 
+    background-color: white; 
+    border-radius: 5px;
+    transform: rotateY(180deg); 
+    border: 1px solid black
+  }
+  .card:hover .front{ transform: rotateY(180deg); }
+  .card:hover .back { transform: rotateY(360deg); }
+  body{
+    max-width: 820px;
+    margin: 20px auto;
+    background-image: url(../img/images.jpg);
+  }
+  
+  
+  .linea-2 {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+   
+  .ico{
+    width: 200px;
+    height: 300px;
+  }
+  
+.card {
+    width: 200px;
+    height: 300px;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    
+  }
+  
+  .card__suit {
+    width: 100%;
+    display: block;
+    font-size: 30px;
+  }
+  
+  .card__suit--top {
+    text-align: left;
+    padding-left: 5px;
+   
+  }
+  
+  .card__suit--bottom {
+    position: absolute;
+    bottom: 0px;
+    text-align: left;
+    transform: rotate(180deg);
+    padding-left: 5px;
+    font-size: 30px;
+  }
+  
+  .card__number {
+    width: 100%;
+    position: absolute;
+    top: 38%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .red {
+    color: #FF0000;
+  }
+  
+  .black {
+    color: #000;
+  }
+  .cart{
+      width: 80px;
+  }
